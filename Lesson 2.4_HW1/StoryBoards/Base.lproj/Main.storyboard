@@ -190,18 +190,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wHb-9O-tF1">
-                                <rect key="frame" x="20" y="534.5" width="374" height="70"/>
+                                <rect key="frame" x="20" y="534.5" width="374" height="31"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gW-5I-yuL">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="Gallery"/>
-                                        <connections>
-                                            <segue destination="1lZ-2h-NhI" kind="show" identifier="showGallery" id="rk6-Jp-Ph7"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7w-At-WcT">
-                                        <rect key="frame" x="0.0" y="39" width="374" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="Hobbies"/>
                                         <connections>
@@ -231,7 +223,19 @@
                             <constraint firstItem="JBI-tt-3ar" firstAttribute="top" secondItem="M8q-Ia-lFT" secondAttribute="top" id="oSc-5P-h60"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="About me" id="tGB-tD-GxQ"/>
+                    <navigationItem key="navigationItem" title="About me" id="tGB-tD-GxQ">
+                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="A4u-2M-epK">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="azs-T7-qQe">
+                                <rect key="frame" x="302" y="5" width="92" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="photo.on.rectangle.angled" catalog="system"/>
+                                <connections>
+                                    <segue destination="1lZ-2h-NhI" kind="show" identifier="showGallery" id="xxY-vg-aYH"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="avatarImage" destination="JBI-tt-3ar" id="wlc-CY-1A6"/>
                         <outlet property="emailTF" destination="uab-3e-Wdc" id="Yu6-rV-Qfg"/>
@@ -405,6 +409,7 @@
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="photo.artframe" catalog="system" width="128" height="93"/>
+        <image name="photo.on.rectangle.angled" catalog="system" width="128" height="100"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
